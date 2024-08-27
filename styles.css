@@ -475,23 +475,3 @@ body{
         height: 55px;
     }
 }
-
-@media (max-width: 1024px){
-    #Buscador{
-        width: 300px;
-    }
-
-    .menu-vertical{
-        right: 39px;
-        width: 170px;
-    }
-
-    .contenedor-nav li{
-        font-size: 23px;
-    }
-
-
-
-
-
-}
