@@ -1,0 +1,497 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #041C32;
+}
+
+/* Header/////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.contenedor-text1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 8px;
+    font-weight: bold;
+    color: #ECB365;
+    background-color: #041C32;
+    text-shadow: 1px 1px #064663;
+}
+
+.hero-img{
+    width: 100%;
+    border: 4px solid #603F26;
+}
+
+.slogan{
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    color: #ECB365;
+    text-shadow: 2px 2px #064663;
+    background-color: #041C32;
+    font-family: "Italiana", sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contenedor-header li .slogan{
+    width: 100%;
+}
+
+/* Nav////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.contenedor-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #041C32;
+    color: #ECB365;
+    font-size: 13px;
+    font-weight: bold;
+    text-shadow: 2px 2px #064663;
+    padding-top: 10px;
+}
+
+#Buscador{
+    width: 100px;   
+    height: 12px;
+    background-color: #ECB365;
+    border: 2px #ECB365;
+}
+
+#Menu{
+    display: none;
+}
+
+.menu-vertical{
+    display: none;
+    position: absolute;
+    background-color: #041C32;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 9px;
+    text-decoration: none;
+    color: #ECB365;
+    width: 58px;
+    right: 3px;
+}
+
+.menu-vertical li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid #ECB365;
+}
+
+.menu-vertical a{
+    color: #ECB365;
+}
+
+#Menu:checked ~ .menu-vertical{
+    display: block;
+}
+
+#Img-menu{
+    height: 15px;
+}
+
+/* Pizzas ///////////////////////////////////////////////////////////////////////////////////////////// */
+
+.info-pizza{
+    width: 100%;
+}
+
+.contenedor-pizza{
+    background-color: #064663;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.caja-pizza{
+    display: flex;
+    flex-direction: column;
+    color: #ECB365;
+    font-size: 10px; 
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.caja-pizza ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #041C32;
+    border-radius: 1rem;
+    margin: 10px 10px 0px 10px;
+    padding: 10px 10px 5px 10px;
+    text-align: center;
+}
+
+.caja-pizza ul li h3{
+    font-family: "Italiana", sans-serif;
+    font-size: 15px;
+}
+
+.img-presentacion{
+    width: 70px;
+    height: 70px;
+    border-radius: 1rem;
+}
+
+.contenedor-btn{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.contenedor-btn a {
+    background-color: #ECB365;
+    color: #041C32;
+    text-shadow: 1px 0px #064663;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 4px 4px 4px 4px;
+}
+
+.contenedor-btn p{
+    font-size: 13px;
+    font-weight: bold;
+}
+/* Footer////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.text-calidad{
+    padding-top: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Playwrite IT Moderna';
+    font-weight: bold;
+    color: #ECB365;
+    width: 100%;
+
+}
+
+.text-horario{
+    font-size: 15px;
+    color: #ECB365;
+    text-align: center;
+}   
+
+.contenedor-footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #041C32;
+    color: #ECB365;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: "Italiana", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.img-redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 13px;
+}
+
+.text-contactanos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+.num-celular{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+.mail-delpuente{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+/* Copyright////////////////////////////////////////////////////////////////////////////////////////// */
+
+.contenedor-copyright{
+    background-color: #ECB365;
+    color: #041C32;
+    text-shadow: 2px #064663;
+    font-size: 9px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+}
+
+/*Media////////////////////////////////////////////////////////////////////////////////////////////////  */
+@media (min-width: 400px) and (max-width: 550px){
+    
+    .contenedor-text1{
+        font-size: 10px;
+    }
+    
+    .slogan{
+        justify-content: center;
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+
+    .menu-vertical{
+        right: 19px;
+    }
+
+    .caja-pizza img{
+        width: 130px;
+        height: 130px;
+    }
+
+    .caja-pizza ul li h3{
+        font-size: 17px;
+    }
+
+    .caja-pizza ul li p{
+        font-size: 13px;
+        margin: 0px 60px 0px 60px;
+    }
+
+    .contenedor-btn a{
+        padding: 4px 4px 4px 4px;
+    }
+
+    .text-contactanos{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 551px) and (max-width: 767px){
+
+    .contenedor-text1{
+        font-size: 11px;
+    }
+
+    .slogan{
+        justify-content: center;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .contenedor-nav{
+        padding-bottom: 10px;
+        font-size: 18px;
+        align-content: center;
+    }
+
+    #Buscador{
+        width: 150px;
+    }
+
+    #Img-menu{
+        position: relative;
+        top: 4px;
+    }
+    
+    .menu-vertical{
+        right: 22px;
+        font-size: 10px;
+        width: 80px;
+        padding-top: 6px;
+    }
+
+    .caja-pizza p{
+        font-size: 13px;
+        margin: 0px 70px 0px 70px;
+    }
+
+    .caja-pizza ul li h3{
+        font-size: 20px;
+    }
+
+    .contenedor-btn a{
+        padding: 4px 4px 4px 4px;
+    }
+
+    .contenedor-btn p{
+        font-size: 15px;
+    }
+
+    .img-presentacion{
+        width: 170px;
+        height: 170px;
+    }
+
+    .text-calidad{
+        font-size: 25px;
+        padding-left: 3px;
+        padding-right: 3px; 
+    }
+
+    .contenedor-footer h2{
+        font-size: 40px;
+    }
+
+    .contenedor-footer iframe{
+        width: 450px;
+        height: 300px;
+    }
+
+    .img-redes img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .text-contactanos{
+        font-size: 20px;
+    }
+
+    .num-celular{
+        font-size: 27px;
+    }
+
+    .mail-delpuente{
+        font-size: 27px;
+    }
+
+    .contenedor-copyright{
+        padding-left: 7px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+}
+
+@media (min-width: 768px) {
+   .contenedor-text1{
+        font-size: 16px;
+   } 
+
+   .hero-img{
+        border: 5px solid #603F26;
+   }
+
+   .slogan{
+        font-size: 35px;
+   }
+
+   .contenedor-nav{
+        height: 50px;
+        margin-top: 12px;
+   }
+
+   .contenedor-nav li{
+        font-size: 22px;
+   }
+
+   #Buscador{
+        border-radius: 1rem;
+        height: 30px;
+        width: 200px;
+   }
+
+   #Img-menu{
+        height: 20px;
+   }
+
+   .menu-vertical{
+        width: 140px;
+        right: 22px;
+    }
+
+    .menu-vertical li{
+        border: 1px solid #ECB365;
+    }
+
+    .info-pizza ul li h3{
+        font-size: 25px;
+    }
+
+    .info-pizza p{
+        font-size: 17px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .img-presentacion{
+        width: 200px;
+        height: 200px;
+    }
+
+    .contenedor-btn a{
+        padding: 10px 20px 10px 20px;
+        text-align: center;
+    }
+
+    .contenedor-btn p{
+        font-size: 20px;
+        padding-top: 10px;
+
+    }
+
+    .caja-pizza ul{
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .text-calidad p{
+        font-size: 35px;
+        padding-bottom: 10px;
+    }
+
+    .contenedor-padre{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .contenedor-footer{
+        font-size: 15px;
+    }
+
+    .contenedor-footer iframe{
+        width: 200px;
+        height: 200px;
+    }
+
+    .img-redes img{
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 1024px){
+    #Buscador{
+        width: 300px;
+    }
+
+    .menu-vertical{
+        right: 39px;
+        width: 170px;
+    }
+
+    .contenedor-nav li{
+        font-size: 23px;
+    }
+
+
+
+
+
+}
