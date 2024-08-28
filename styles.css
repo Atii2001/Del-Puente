@@ -321,7 +321,8 @@ body{
     }
 
     .menu-vertical{
-        right: 19px;
+        right: 0px;
+        width: 70px;
     }
 
     .caja-pizza img{
@@ -347,7 +348,7 @@ body{
     }
 }
 
-@media (min-width: 551px) and (max-width: 767px){
+@media (min-width: 551px) and (max-width: 600px){
 
     .contenedor-text1{
         font-size: 11px;
@@ -375,9 +376,9 @@ body{
     }
     
     .menu-vertical{
-        right: 22px;
+        right: 0px;
         font-size: 10px;
-        width: 80px;
+        width: 90px;
         padding-top: 6px;
     }
 
@@ -476,11 +477,16 @@ body{
 
    .menu-vertical{
         width: 140px;
-        right: 22px;
+        right: 0px;
+        margin-top: 14px;
     }
 
     .menu-vertical li{
         border: 1px solid #ECB365;
+    }
+
+    .menu-vertical li a{
+        font-size: 18px;
     }
 
     .info-pizza ul li h3{
