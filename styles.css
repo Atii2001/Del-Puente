@@ -20,7 +20,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 8px;
+    font-size: 9px;
     font-weight: bold;
     color: #ECB365;
     background-color: #041C32;
@@ -43,7 +43,8 @@ body{
     color: #ECB365;
     text-shadow: 2px 2px #064663;
     background-color: #041C32;
-    font-family: "Italiana", sans-serif;
+    /* font-family: "Italiana", sans-serif;*/
+    font-family: "EB Garamond", sans-serif;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -67,6 +68,12 @@ body{
     padding-top: 10px;
 }
 
+.contenedor-nav li a{
+    text-decoration: none;
+    color: #ECB365;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 #Buscador{
     width: 100px;   
     height: 12px;
@@ -88,8 +95,8 @@ body{
     font-size: 9px;
     text-decoration: none;
     color: #ECB365;
-    width: 58px;
-    right: 3px;
+    width: 70px;
+    right: 0px;
 }
 
 .menu-vertical li{
@@ -149,6 +156,16 @@ body{
     padding-right: 50px;
 }   
 
+.caja-postre{
+    display: flex;
+    flex-direction: column;
+    color: #ECB365;
+    font-size: 10px; 
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 .caja-bebida ul{
     display: flex;
     flex-direction: column;
@@ -160,7 +177,22 @@ body{
     text-align: center;
 }
 
+.caja-postre ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #041C32;
+    border-radius: 1rem;
+    margin: 10px 10px 0px 10px;
+    padding: 10px 10px 5px 10px;
+    text-align: center;
+}
+
 .titulo-bebidas{
+    padding-top: 20px;
+}
+
+.titulo-postres{
     padding-top: 20px;
 }
 
