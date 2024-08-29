@@ -47,6 +47,8 @@ body{
     font-family: "EB Garamond", sans-serif;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .contenedor-header li .slogan{
@@ -105,7 +107,7 @@ body{
     border: 1px solid #ECB365;
 }
 
-.menu-vertical a{
+.menu-vertical li a{
     color: #ECB365;
 }
 
@@ -115,6 +117,10 @@ body{
 
 #Img-menu{
     height: 15px;
+}
+
+#Buscador::placeholder{
+    font-size: 11px;
 }
 
 /* Pizzas ///////////////////////////////////////////////////////////////////////////////////////////// */
@@ -316,8 +322,9 @@ body{
     
     .slogan{
         justify-content: center;
-        padding-left: 7px;
-        padding-right: 7px;
+        padding-left:20px;
+        padding-right: 20px;
+        font-size: 21px;
     }
 
     .menu-vertical{
@@ -336,11 +343,17 @@ body{
 
     .caja-pizza ul li p{
         font-size: 13px;
-        margin: 0px 60px 0px 60px;
+        margin: 0px 50px 0px 50px;
     }
 
     .contenedor-btn a{
         padding: 4px 4px 4px 4px;
+    }
+
+    .text-calidad{
+        font-size: 22px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .text-contactanos{
