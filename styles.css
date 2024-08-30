@@ -129,6 +129,7 @@ body{
 
 #Buscador::placeholder{
     font-size: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 3px;
 }
 
@@ -501,4 +502,166 @@ y el 2do va a englobar desde 701px hasta infinito (o hasta el prox min width)
         height: 250px;
     }
 }
+
+@media (min-width: 768px){
+    
+    .contenedor-text1 li p{
+        font-size: 13px;
+    }
+
+    .slogan p{
+        font-size: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .contenedor-nav li{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .contenedor-nav li .opciones-nav{
+        font-size: 18px;
+    }
+
+    .contenedor-nav li #Buscador{
+        margin-top: 5px;
+        width: 150px;
+        height: 17px;
+        border-radius: 1rem;
+    }
+
+    #Buscador::placeholder{
+        padding-left: 10px;
+        font-size: 10px;
+    }
+
+    .contenedor-nav li #Img-menu{
+        height: 22px;
+    }
+
+    .menu-vertical{
+        margin-top: 15px;
+        width: 130px;
+        right: 14px;
+    }
+
+    .menu-vertical li a{
+        font-size: 13px;
+    }
+    /*  */
+    .contenedor-main .caja-pizza ul .img-presentacion{
+        width: 200px;
+        height: 200px;
+    }
+
+    .contenedor-main .caja-pizza ul h3{
+        font-size: 25px;
+    }
+
+    .contenedor-main .caja-pizza ul p{
+        font-size: 20px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    /*  */
+    .contenedor-main .caja-bebida ul .img-presentacion{
+        width: 200px;
+        height: 200px;
+    }
+
+    .contenedor-main .caja-bebida ul h3{
+        font-size: 25px;
+    }
+
+    .contenedor-main .caja-bebida ul p{
+        font-size: 20px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    /*  */
+    .contenedor-main .caja-postre ul .img-presentacion{
+        width: 200px;
+        height: 200px;
+    }
+
+    .contenedor-main .caja-postre ul h3{
+        font-size: 25px;
+    }
+
+    .contenedor-main .caja-postre ul p{
+        font-size: 20px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    /*  */
+    .contenedor-main .caja-pizza ul .contenedor-btn{
+        gap: 30px;
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
+
+    .contenedor-main .caja-pizza ul .contenedor-btn a{
+        padding: 15px 25px 15px 25px;
+        font-size: 19px;
+    }
+
+    .contenedor-main .caja-pizza ul .contenedor-btn p{
+        font-size: 25px;
+    }
+    /*  */
+    .contenedor-main .caja-bebida ul .contenedor-btn{
+        gap: 30px;
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
+
+    .contenedor-main .caja-bebida ul .contenedor-btn a{
+        padding: 15px 25px 15px 25px;
+        font-size: 19px;
+    }
+
+    .contenedor-main .caja-bebida ul .contenedor-btn p{
+        font-size: 25px;
+    }
+    /*  */
+    .contenedor-main .caja-postre ul .contenedor-btn{
+        gap: 30px;
+        margin-top: 25px;
+        margin-bottom: 5px;
+    }
+
+    .contenedor-main .caja-postre ul .contenedor-btn a{
+        padding: 15px 25px 15px 25px;
+        font-size: 19px;
+    }
+
+    .contenedor-main .caja-postre ul .contenedor-btn p{
+        font-size: 25px;
+    }
+
+    .contenedor-main h1{
+        font-size: 50px;
+    }
+
+    .contenedor-main p{
+        font-size: 25px;
+    }   
+
+    .text-calidad li p{
+        font-size: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+    }
+
+    .contenedor-padre-footer .contenedor-footer li h2{
+        font-size: 55px;
+    }
+
+    .contenedor-padre-footer .contenedor-footer li p{
+        font-size: 25px;
+    }
+}
+
 
