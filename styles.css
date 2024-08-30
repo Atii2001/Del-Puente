@@ -347,7 +347,7 @@ Si pones @media min width 500px y otro min width de 700px, el primero va a englo
 y el 2do va a englobar desde 701px hasta infinito (o hasta el prox min width)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////  ///////////////////*/
-@media (min-width: 400px){
+@media (min-width: 374px){
     .slogan p{
         padding-left: 30px;
         padding-right: 30px;
