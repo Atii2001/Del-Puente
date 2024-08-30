@@ -20,39 +20,44 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 9px;
-    font-weight: bold;
     color: #ECB365;
     background-color: #041C32;
     text-shadow: 1px 1px #064663;
+    width: 100%;
+}
+
+.contenedor-text1 li{
+    height: 11px;
 }
 
 .contenedor-text1 li p{
     text-align: center;
+    font-size: 9px;
 }
 
 .hero-img{
     width: 100%;
-    border: 4px solid #603F26;
+    border: 3px solid #603F26;
 }
 
 .slogan{
-    display: flex;
+    display: block;
+    justify-content: center;
     text-align: center;
-    font-weight: bold;
     color: #ECB365;
     text-shadow: 2px 2px #064663;
-    background-color: #041C32;
-    /* font-family: "Italiana", sans-serif;*/
-    font-family: "EB Garamond", sans-serif;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    padding-right: 25px;
+    background-color: #041C32; 
+    width: 100%;
 }
 
-.contenedor-header li .slogan{
-    width: 100%;
+.slogan p{
+    font-family: "EB Garamond", sans-serif;
+    font-size: 18px;
+    font-weight: bold; 
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* Nav////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -60,11 +65,13 @@ body{
 .contenedor-nav{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
+
     background-color: #041C32;
     color: #ECB365;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: bold;
     text-shadow: 2px 2px #064663;
     padding-top: 10px;
@@ -77,10 +84,10 @@ body{
 }
 
 #Buscador{
-    width: 100px;   
-    height: 12px;
+    width: 90px;   
+    height: 10px;
     background-color: #ECB365;
-    border: 2px #ECB365;
+    border: 1px solid #064663;
 }
 
 #Menu{
@@ -92,23 +99,24 @@ body{
     position: absolute;
     background-color: #041C32;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     text-align: center;
-    font-size: 9px;
     text-decoration: none;
     color: #ECB365;
-    width: 70px;
+    width: auto;
     right: 0px;
 }
 
 .menu-vertical li{
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     border: 1px solid #ECB365;
 }
 
 .menu-vertical li a{
     color: #ECB365;
+    font-size: 8px;
+    text-align: center;
 }
 
 #Menu:checked ~ .menu-vertical{
@@ -130,7 +138,7 @@ body{
     width: 100%;
 }
 
-.contenedor-pizza{
+.contenedor-main{
     background-color: #064663;
     padding-top: 25px;
     padding-bottom: 50px;
@@ -246,16 +254,21 @@ body{
     font-weight: bold;
 }
 /* Footer////////////////////////////////////////////////////////////////////////////////////////////////*/
+.contenedor-padre-footer{
+    display: block;
+    width: 100%;
+}
 
 .text-calidad{
     padding-top: 15px;
-    text-align: center;
-    font-size: 15px;
-    font-family: 'Playwrite IT Moderna';
-    font-weight: bold;
-    color: #ECB365;
     width: 100%;
+}
 
+.text-calidad li p{
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Playwrite IT Moderna'; 
+    color: #ECB365;
 }
 
 .text-horario{
@@ -276,6 +289,11 @@ body{
     font-family: "Italiana", sans-serif;
     font-weight: bold;
     font-size: 20px;
+}
+
+.contenedor-padre-footer .contenedor-footer li h2{
+    font-size: 30px;
+    text-decoration: overline;
 }
 
 .img-redes{
@@ -314,252 +332,160 @@ body{
     padding-left: 4px;
 }
 
-/*Media////////////////////////////////////////////////////////////////////////////////////////////////  */
-@media (min-width: 400px) and (max-width: 550px){
-    
-    .contenedor-text1{
-        font-size: 10px;
+/*Media:
+@media (max-width) : es para indicar hasta q máximo de resolución queres que se vea el ajuste.
+ Por ejemplo max width 500px engloba desde 1px hasta 500px.
+
+@media (min-width): es para indicar hasta q resolución mínima queres q se vea el ajuste.
+Por ejemplo min width 500px engloba desde 500px hasta infinito (no engloba de 1px hasta 499px)
+
+
+Si pones @media max width 500px y otro max width 600px, el primero va a englobar de 1px hasta 500px 
+y el segundo va a englobar desde 501px hasta 600px.
+
+Si pones @media min width 500px y otro min width de 700px, el primero va a englobar desde 500px hasta 700px 
+y el 2do va a englobar desde 701px hasta infinito (o hasta el prox min width)
+
+////////////////////////////////////////////////////////////////////////////////////////////////  ///////////////////*/
+@media (min-width: 425px){
+    .contenedor-text1 li p{
+        font-size: 12px;
     }
-    
-    .slogan{
-        justify-content: center;
-        padding-left:20px;
-        padding-right: 20px;
-        font-size: 21px;
+
+    .slogan p{
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 22px;
     }
 
     .menu-vertical{
+        width: 80px;
         right: 0px;
-        width: 70px;
-    }
+    }   
 
-    .caja-pizza img{
-        width: 130px;
-        height: 130px;
-    }
-
-    .caja-pizza ul li h3{
-        font-size: 17px;
-    }
-
-    .caja-pizza ul li p{
-        font-size: 13px;
-        margin: 0px 50px 0px 50px;
-    }
-
-    .contenedor-btn a{
-        padding: 4px 4px 4px 4px;
-    }
-
-    .text-calidad{
+    .text-calidad li p{
         font-size: 22px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 17px;
+        padding-right: 17px;
     }
 
-    .text-contactanos{
-        font-size: 20px;
+    .contenedor-padre-footer .contenedor-footer li h2{
+        font-size: 35px;
+        text-decoration: overline;
     }
 }
 
-@media (min-width: 551px) and (max-width: 600px){
-
-    .contenedor-text1{
-        font-size: 11px;
+@media (min-width: 550px){
+    .contenedor-text1 li p{
+        font-size: 12px;
     }
 
-    .slogan{
-        justify-content: center;
-        text-align: center;
-        font-size: 18px;
+    .hero-img{
+        margin-top: 3px;
+    }
+
+    .slogan p{
+        padding-left: 35px;
+        padding-right: 35px;
+        font-size: 25px;
     }
 
     .contenedor-nav{
-        padding-bottom: 10px;
-        font-size: 18px;
-        align-content: center;
+        padding-top: 15px;
+        padding-bottom: 5px;
     }
 
-    #Buscador{
-        width: 150px;
-    }
-
-    #Img-menu{
-        position: relative;
-        top: 4px;
-    }
-    
     .menu-vertical{
-        right: 0px;
-        font-size: 10px;
+        right: 10px;
         width: 90px;
-        padding-top: 6px;
-    }
-
-    .caja-pizza p{
-        font-size: 13px;
-        margin: 0px 70px 0px 70px;
-    }
-
-    .caja-pizza ul li h3{
-        font-size: 20px;
-    }
-
-    .contenedor-btn a{
-        padding: 4px 4px 4px 4px;
-    }
-
-    .contenedor-btn p{
-        font-size: 15px;
-    }
-
-    .img-presentacion{
-        width: 170px;
-        height: 170px;
-    }
-
-    .text-calidad{
-        font-size: 25px;
-        padding-left: 3px;
-        padding-right: 3px; 
-    }
-
-    .contenedor-footer h2{
-        font-size: 40px;
-    }
-
-    .contenedor-footer iframe{
-        width: 450px;
-        height: 300px;
-    }
-
-    .img-redes img{
-        width: 70px;
-        height: 70px;
-    }
-
-    .text-contactanos{
-        font-size: 20px;
-    }
-
-    .num-celular{
-        font-size: 27px;
-    }
-
-    .mail-delpuente{
-        font-size: 27px;
-    }
-
-    .contenedor-copyright{
-        padding-left: 7px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-    }
-}
-
-@media (min-width: 768px) {
-   .contenedor-text1{
-        font-size: 16px;
-   } 
-
-   .hero-img{
-        border: 5px solid #603F26;
-   }
-
-   .slogan{
-        font-size: 35px;
-   }
-
-   .contenedor-nav{
-        height: 50px;
-        margin-top: 12px;
-   }
-
-   .contenedor-nav li{
-        font-size: 22px;
-   }
-
-   #Buscador{
-        border-radius: 1rem;
-        height: 30px;
-        width: 200px;
-   }
-
-   #Img-menu{
-        height: 20px;
-   }
-
-   .menu-vertical{
-        width: 140px;
-        right: 0px;
-        margin-top: 14px;
-    }
-
-    .menu-vertical li{
-        border: 1px solid #ECB365;
+        margin-top: 5px;
     }
 
     .menu-vertical li a{
+        font-size: 10px;
+    }
+
+    #Buscador{
+        height: 13px;
+        width: 120px;
+    }
+
+    .opciones-nav{
+        font-size: 13px;
+    }
+
+    .contenedor-main .caja-pizza ul{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .contenedor-main .caja-pizza ul img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .contenedor-main .caja-pizza ul h3{
+        font-size: 20px;
+    }
+
+    .contenedor-main .caja-pizza ul p{
+        font-size: 12px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .contenedor-main .caja-bebida ul{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .contenedor-main .caja-bebida ul img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .contenedor-main .caja-bebida ul h3{
         font-size: 18px;
     }
 
-    .info-pizza ul li h3{
-        font-size: 25px;
+    .contenedor-main .caja-bebida ul p{
+        font-size: 12px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
-    .info-pizza p{
-        font-size: 17px;
-        padding-left: 60px;
-        padding-right: 60px;
+    .contenedor-main .caja-postre ul{
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
-    .img-presentacion{
-        width: 200px;
-        height: 200px;
+    .contenedor-main .caja-postre ul img{
+        width: 120px;
+        height: 120px;
     }
 
-    .contenedor-btn a{
-        padding: 10px 20px 10px 20px;
-        text-align: center;
-    }
-
-    .contenedor-btn p{
+    .contenedor-main .caja-postre ul h3{
         font-size: 20px;
-        padding-top: 10px;
-
     }
 
-    .caja-pizza ul{
-        margin-left: 70px;
-        margin-right: 70px;
-        margin-top: 30px;
-        margin-bottom: 30px;
+    .contenedor-main .caja-postre ul p{
+        font-size: 12px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
-    .text-calidad p{
-        font-size: 35px;
-        padding-bottom: 10px;
+    .text-calidad li p{
+        font-size: 28px;
     }
 
-    .contenedor-padre{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        width: 100%;
+    .contenedor-padre-footer .contenedor-footer li h2{
+        font-size: 40px;
+        text-decoration: overline;
     }
 
-    .contenedor-footer{
-        font-size: 15px;
-    }
-
-    .contenedor-footer iframe{
-        width: 200px;
-        height: 200px;
-    }
-
-    .img-redes img{
-        width: 55px;
-        height: 55px;
+    .contenedor-padre-footer .contenedor-footer li iframe{
+        width: 400px;
+        height: 250px;
     }
 }
+
