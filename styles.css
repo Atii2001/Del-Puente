@@ -360,7 +360,7 @@ y el 2do va a englobar desde 701px hasta infinito (o hasta el prox min width)
 
     .menu-vertical{
         width: 80px;
-        right: 0px;
+        right: 5px;
     }   
 
     .text-calidad li p{
