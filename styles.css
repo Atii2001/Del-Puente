@@ -139,13 +139,16 @@ body{
     width: 100%;
 }
 
-.contenedor-main{
+main .contenedor-main{
     background-color: #064663;
     padding-top: 25px;
     padding-bottom: 50px;
+    
 }
 
-.titulo-caja{
+
+main .contenedor-main .titulo-caja{
+    justify-content: center;
     text-align: center;
     font-family: "Italiana", sans-serif;
     font-weight: bold;
@@ -361,7 +364,7 @@ y el 2do va a englobar desde 701px hasta infinito (o hasta el prox min width)
     }
 }
 
-@media screen and (min-width: 425px){
+@media screen and(min-width: 425px){
     .contenedor-text1 li p{
         font-size: 12px;
     }
@@ -710,56 +713,69 @@ y el 2do va a englobar desde 701px hasta infinito (o hasta el prox min width)
     .menu-vertical li a{
         font-size: 16px;
     }
-
-    .contenedor-main .caja-pizza li p{
-        padding-left: 110px;
-        padding-right: 110px;
-        font-size: 30px;
+ 
+   .caja-pizza{
+        margin: 0px;
+        padding: 0px;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
-    .contenedor-main .caja-pizza .contenedor-btn li p{
-        font-size: 30px;
+    .caja-pizza .variedad-pizza{
+        width: calc(100% - 620px);
+        flex-grow: 1;
     }
 
-    .contenedor-main .caja-bebida li p{
-        padding-left: 110px;
-        padding-right: 110px;
-        font-size: 30px;
+    .caja-bebida{
+        margin: 0px;
+        padding: 0px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .caja-bebida .variedad-bebida{
+        width: calc(100% - 620px);
+        flex-grow: 1;
+    }
+
+    .caja-postre{
+        margin: 0px;
+        padding: 0px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .caja-postre .variedad-postre{
+        width: calc(100% - 620px);
+        flex-grow: 1;
     }
 
     .text-calidad li p{
         font-size: 54px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .contenedor-padre-footer .contenedor-footer li h2{
-        font-size: 70px;
+        font-size: 80px;
     }
 
     .contenedor-padre-footer .contenedor-footer li iframe{
         width: 600px;
-        height: 400px;
+        height: 500px;
     }
 
-    .contenedor-padre-footer .contenedor-footer li p{
+    .contenedor-padre-footer .contenedor-footer .text-contactanos li p{
         font-size: 40px;
     }
 
-    .contenedor-padre-footer .contenedor-footer li img{
-        width: 100px;
-        height: 100px;
-    }
-
-    .img-redes{
-        gap: 35px;
+    .contenedor-padre-footer .contenedor-footer .img-redes li a img{
+        width: 110px;
     }
 
     .contenedor-copyright p{
         font-size: 20px;
     }
-
 }
 
 
-    
