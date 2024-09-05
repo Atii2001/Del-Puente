@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img1/caminito.webp);
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    background-color: #041C32;
+}
+
+header a,#volver{
+    width: 30px;
+    height: 30px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 608px;
+    width: 100%;
+}
+
+.form-inicio{
+    display: block;
+    justify-content: center;
+    align-content: center;
+    height: 70vh;
+    border: 5px solid #ECB365;
+    border-radius: 1rem;
+    background-color: #041C32;
+    background-position: center;
+    background-size: cover;
+    padding: 20px 20px 20px 20px;
+    margin: 20px 20px 100px 20px;
+}
+
+.form-inicio img{
+    width: 50px;
+}
+
+.caja-inicio{
+    display: flex;
+    flex-direction: column;
+}
+
+.caja-inicio img{
+    width: 100px;
+    border: 5px solid #ECB365;
+    background-color: #064663;
+    border-radius: 50%;
+}
+
+.form-inicio .caja-inicio li .titulo-inicio{
+    color: #ECB365;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 37px;
+    margin-bottom: 9px;
+    margin-top: 3px;
+}
+
+.form-inicio .caja-inicio li{
+    color: #ECB365;
+    text-align: center;
+}
+
+.ing-email li label{
+    font-size: 20px;
+}
+
+.ing-email li input{
+    height: 22px;
+    width: 200px;
+    font-size: 13px;
+}
+
+.ing-pass li label{
+    font-size: 20px;
+}
+
+.ing-pass li input{
+    height: 22px;
+    width: 200px;
+    font-size: 13px;
+}
+
+.rec-pass{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.form-inicio .rec-pass li input{
+    width: 12px;
+    height: 14px;
+    margin-right: 8px;
+    margin-top: 2px ;
+}
+
+.btn-enter{
+    margin-top: 8px;
+    margin-bottom: 10px;
+    width: 110px;
+    height: 30px;
+    background-color: #064663;
+    border: 2px solid #ECB365;
+    border-radius: 1rem;
+    color: #ECB365;
+    font-weight: bold;
+}
+
+.form-inicio .caja-inicio li a{
+    text-decoration: none;
+    color: white;    
+}
+
+/* ///////////////////////////////////////////// */
+
+@media screen and (min-width: 596px){
+    main{
+        background-image: url(img1/fondo\ caminito\ 1920.jpg);
+    }   
+
+    header{
+        background-color: #041C32;
+    }
+}
+    
