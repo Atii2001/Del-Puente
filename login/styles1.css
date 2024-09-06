@@ -125,14 +125,22 @@ main{
 }
 
 /* ///////////////////////////////////////////// */
+@media (min-width: 425px){
+    .form-inicio{
+        margin-top: 55px;
+    }
+}
 
 @media screen and (min-width: 596px){
     main{
         background-image: url(img1/fondo\ caminito\ 1920.jpg);
+        width: 100%;
+        height: 600px;
     }   
+
 
     header{
         background-color: #041C32;
     }
 }
-    
+
