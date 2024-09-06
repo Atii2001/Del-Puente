@@ -125,10 +125,10 @@ main{
 }
 
 /* ///////////////////////////////////////////// */
-@media (min-width: 425px){
+@media (min-width: 551px){
     .form-inicio{
         position: relative;
-        top: 150px;
+        top: 35px;
     }
 }
 
