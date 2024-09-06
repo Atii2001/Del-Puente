@@ -127,7 +127,8 @@ main{
 /* ///////////////////////////////////////////// */
 @media (min-width: 425px){
     .form-inicio{
-        margin-top: 120px;
+        position: relative;
+        top: 150px;
     }
 }
 
