@@ -125,7 +125,7 @@ main{
 }
 
 /* ///////////////////////////////////////////// */
-@media (min-width: 576px){
+@media screen and(min-width: 425px){
     main{
         padding-top: 112px;
         padding-bottom: 132px;
@@ -142,11 +142,11 @@ main{
         width: 100%;
         height: 600px;
     }   
-
+/* 
 
     header{
         background-color: #041C32;
-    }
+    } */
 }
 
 @media screen and (min-width:1440px){
