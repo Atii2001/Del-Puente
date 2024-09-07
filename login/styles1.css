@@ -40,7 +40,7 @@ main{
     background-position: center;
     background-size: cover;
     padding: 20px 20px 20px 20px;
-    margin: 20px 20px 100px 20px;
+    margin: 80px 20px 100px 20px;
 }
 
 .form-inicio img{
@@ -125,17 +125,13 @@ main{
 }
 
 /* ///////////////////////////////////////////// */
-@media screen and(max-width: 551px){
+@media (min-width:425px) and (max-width: 551px){
     main{
-        height: 400px;
-    }
-
-    main .form-inicio{
-        margin: 20px 20px 20px 20px;
+        width: 100%;
     }
 }
 
-@media screen and (min-width: 596px){
+@media screen and (min-width: 552px){
     main{
         background-image: url(img1/fondo\ caminito\ 1920.jpg);
         width: 100%;
