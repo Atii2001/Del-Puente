@@ -125,13 +125,12 @@ main{
 }
 
 /* ///////////////////////////////////////////// */
-@media screen and(min-width: 425px){
+@media screen and(max-width: 551px){
     main{
-        padding-top: 112px;
-        padding-bottom: 132px;
+        height: 400px;
     }
 
-    .form-inicio{
+    main .form-inicio{
         margin: 20px 20px 20px 20px;
     }
 }
