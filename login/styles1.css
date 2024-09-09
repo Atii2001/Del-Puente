@@ -127,14 +127,13 @@ main{
 /* ///////////////////////////////////////////// */
 @media (max-width: 551px){
     main{
-        background-size: 100% 100%;
+        background-size: 100% 600px;
     }
 }
 
 @media screen and (min-width: 552px){
     main{
         background-image: url(img1/fondo\ caminito\ 1920.jpg);
-        height: auto;
     }   
 }
 
