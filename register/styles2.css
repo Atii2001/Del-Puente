@@ -9,6 +9,7 @@
 body{
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 header{
@@ -24,16 +25,16 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(img1/caminito.webp);
-    height: 608px;
+    background-image: url(img2/bombonera.jpg);
+    height: 574px;
     width: 100%;
 }
 
-.form-inicio{
+.form-registro{
     display: block;
     justify-content: center;
     align-content: center;
-    height: 70vh;
+    height: 90vh;
     border: 5px solid #ECB365;
     border-radius: 1rem;
     background-color: #041C32;
@@ -43,23 +44,23 @@ main{
     margin: 90px 20px 100px 20px;
 }
 
-.form-inicio img{
+.form-registro img{
     width: 50px;
 }
 
-.caja-inicio{
+.caja-registro{
     display: flex;
     flex-direction: column;
 }
 
-.caja-inicio img{
+.caja-registro img{
     width: 100px;
     border: 5px solid #ECB365;
     background-color: #064663;
     border-radius: 50%;
 }
 
-.form-inicio .caja-inicio li .titulo-inicio{
+.form-registro .caja-registro li .titulo-registro{
     color: #ECB365;
     text-align: center;
     text-decoration: underline;
@@ -69,48 +70,82 @@ main{
     margin-top: 3px;
 }
 
-.form-inicio .caja-inicio li{
+.form-registro .caja-registro li{
     color: #ECB365;
     text-align: center;
 }
 
-.ing-email li label{
+.ing-nom_ape li label{
     font-size: 20px;
 }
 
-.ing-email li input{
-    height: 22px;
-    width: 200px;
-    font-size: 13px;
+.ing-nom_ape li input{
+    width: 230px;
+    height: 25px;
 }
+
+.ing-email li label{
+    font-size: 19px;
+}
+
+.ing-email li input{
+    height: 25px;
+    width: 230px;
+}
+
+.ing-direc li label{
+    font-size: 20px;
+}
+
+.caja-direc{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+.ing-direc li #direccion{
+    width: 180px;
+    height: 25px;
+}
+
+.ing-direc li #numero{
+    width: 50px;
+    height: 25px;
+}
+
+.ing-cel{
+    font-size: 20px;
+}
+
+.ing-cel li input{
+    width: 230px;
+    height: 25px;
+}
+
 
 .ing-pass li label{
     font-size: 20px;
 }
 
 .ing-pass li input{
-    height: 22px;
-    width: 200px;
-    font-size: 13px;
+    height: 25px;
+    width: 230px;
 }
 
-.rec-pass{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.ing-re_pass li label{
+    font-size: 20px;
 }
 
-.form-inicio .rec-pass li input{
-    width: 12px;
-    height: 14px;
-    margin-right: 8px;
-    margin-top: 2px ;
+.ing-re_pass li input{
+    width: 230px;
+    height: 25px;
 }
 
 .btn-enter{
-    margin-top: 8px;
-    margin-bottom: 10px;
-    width: 110px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
     height: 30px;
     background-color: #064663;
     border: 2px solid #ECB365;
@@ -118,35 +153,5 @@ main{
     color: #ECB365;
     font-weight: bold;
 }
-
-.form-inicio .caja-inicio li a{
-    text-decoration: none;
-    color: white;    
-}
-
 /* ///////////////////////////////////////////// */
-@media (min-width:425px) and (max-width: 551px){
-    main{
-        width: 100%;
-    }
-}
 
-@media screen and (min-width: 552px){
-    main{
-        background-image: url(img1/fondo\ caminito\ 1920.jpg);
-        width: 100%;
-        height: 600px;
-    }   
-/* 
-
-    header{
-        background-color: #041C32;
-    } */
-}
-
-@media screen and (min-width:1440px){
-    main{
-        width: 100%;
-        height: 661px;
-    }
-}
