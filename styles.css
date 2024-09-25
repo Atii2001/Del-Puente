@@ -748,7 +748,7 @@ div ul li h1{
     }
 }
 
-@media (min-width: 980px){
+@media screen and (min-width: 980px){
     
     .contenedor-text1 li{
         height: 22px;
@@ -787,8 +787,8 @@ div ul li h1{
     }
 
     .menu-vertical{
-        width: 150px;
-        right: 0px;
+        width: 200px;
+        right: 20px;
     }
 
     .menu-vertical li a{
@@ -803,7 +803,7 @@ div ul li h1{
     }
 
     .caja-pizza .variedad-pizza{
-        width: calc(100% - 800px);
+        width: calc(100% - 750px);
         flex-grow: 1;
     }
 
@@ -815,7 +815,7 @@ div ul li h1{
     }
 
     .caja-bebida .variedad-bebida{
-        width: calc(100% - 800px);
+        width: calc(100% - 750px);
         flex-grow: 1;
     }
 
@@ -827,7 +827,7 @@ div ul li h1{
     }
 
     .caja-postre .variedad-postre{
-        width: calc(100% - 800px);
+        width: calc(100% - 750px);
         flex-grow: 1;
     }
 
@@ -872,7 +872,7 @@ div ul li h1{
     }
 
     div .card_ li .text-card{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .titulo-card{
@@ -880,8 +880,8 @@ div ul li h1{
         margin-bottom: 120px;
     }
 }
-/* 
-@media (min-width: 1440px){
+
+@media screen and (min-width: 1400px){
     .contenedor-text1 li p{
         font-size: 20px;
     }
@@ -920,7 +920,7 @@ div ul li h1{
     .menu-vertical{
         width: 210px;
         margin-top: 18px;
-        right: 22px;
+        right: 0px;
     }
 
     .menu-vertical li a{
@@ -968,7 +968,7 @@ div ul li h1{
     }
 
     .caja-postre .variedad-postre{
-        width: calc(100% - 1050px);
+        width: calc(100% - 900px);
         flex-grow: 1;
     }
 
@@ -987,15 +987,6 @@ div ul li h1{
         flex-wrap: wrap;
         width: 100%
 
-    }
-
-    .contenedor-padre-footer .contenedor-footer{
-        background-color: #064663;
-        border: 3px solid #ECB365;
-        border-radius: 1rem;
-        flex-grow: 1;
-        margin-left: 20px;
-        margin-right: 20px;
     }
 
     .contenedor-padre-footer .contenedor-footer li h2{
@@ -1019,4 +1010,4 @@ div ul li h1{
     .contenedor-copyright p{
         font-size: 13px;
     }
-} */
+} 

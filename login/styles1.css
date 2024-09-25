@@ -33,7 +33,7 @@ main{
     display: block;
     justify-content: center;
     align-content: center;
-    height: 70vh;
+    height: 92vh;
     border: 5px solid #ECB365;
     border-radius: 1rem;
     background-color: #041C32;
@@ -134,5 +134,12 @@ main{
 @media screen and (min-width: 1024px){
     main{
         background-size: 100% 100%;
+    }
+
+    .form-inicio{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        position: relative;
+        bottom: 75px;
     }
 }
